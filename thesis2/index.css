@@ -1,0 +1,44 @@
+#index_body{
+    text-align: center;
+    background-color: #A31037;
+    
+}
+#indexHeader{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    color: white
+}
+#listingIndex{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#indexImg{
+    width: 200px;
+    height: 200px;
+}
+.listingTile{
+   
+    list-style: none;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    width: 20%;
+    height: 275px;
+    background-color: white;
+    color:#A31037;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.browseBtn{
+    font-family: 'Playfair Display';
+    padding: .2em .4em;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    color: #A31037;
+    border: #FFFFFF;
+    width: 10em;
+    margin-bottom: 10%;
+}
