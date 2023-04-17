@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Microsoft identity platform</title>
+  <link rel="SHORTCUT ICON" href="images/second_hand.jpg" type="image/x-icon">
+  
+  <link href="welcome.css" type="text/css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
+   <!-- msal.min.js can be used in the place of msal.js; included msal.js to make debug easy -->
+  <script src="https://alcdn.msauth.net/browser/2.30.0/js/msal-browser.js"
+    integrity="sha384-o4ufwq3oKqc7IoCcR08YtZXmgOljhTggRwxP2CLbSqeXGtitAxwYaUln/05nJjit"
+    crossorigin="anonymous"></script>
+ <!--  
+   adding Bootstrap 4 for UI components  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="SHORTCUT ICON" href="https://c.s-microsoft.com/favicon.ico?v2" type="image/x-icon"> -->
+</head>
+
+<body>
+  <div id="topnav">
+    <h1 id="titlePage">Second Hand<img id ="header_img" src="images/second_hand.jpg" alt="Second Hand"/></h1>
+    
+      <button type="button" id="SignIn" onclick="signIn()">
+        Sign In
+      </button>
+      <div id="card-div"  style="display:none">
+      
+        <h5 class="card-title" id="WelcomeMessage" style="display:none">Please sign-in to see your profile and read your mails</h5>
+        <div id="topnavLog">
+          <ul id="navList">
+            <li class="navItem">
+              <a class="navLink" href="thesis.php">
+                List Item
+               </a> 
+                
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="browse.php">
+                Browse
+               </a> 
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="thesis.php">
+              Manage Listings
+             </a> 
+        </li>
+          </ul>
+        </div>
+  </div>
+  </div>
+  
+    
+  <div id="welcomeBody">
+
+  <h2 id="titleDisc">Manhattanville College Marketplace</h2>
+  <hr>
+  <p id="welcomeObj">
+      Manhattanville College students dispose of excess dorm equipment every semester. When it costs more to ship a microwave home than its original cost, the decision is easy. Students need a way to buy, sell, and trade items that would otherwise be thrown away. A proprietary marketplace app for students would accomplish this and more. Community and sustainability are the driving force behind how the application is designed.
+
+<br><br>Only Manhattanville College students may use the application. This eliminates safety concerns regarding inviting buyers to campus. Additionally, shortening the supply chain and eliminating waste that would be repurchased protects sustainability initiatives.
+
+<br><br>This project is a work in progress. You may track its development at the below link. Thank you for supporting SecondHand at Manhattanville College.
+  </p>
+  
+  
+  <a class="welcomeLink" href="https://github.com/kaelei/SeniorThesis" alt="Github Link">Second Hand Github Repository</a>
+
+  <ul id="welcomeSlide">
+      
+      <li class="slide">
+          <img class="welcomeImg1" src="images/Trash1.jpg" alt="Welcome Image" />
+      </li>
+      <li class="slide">
+          <img class="welcomeImg2" src="images/Trash2.jpg" alt="Welcome Image" />
+      </li>
+      <li class="slide">
+          <img class="welcomeImg3" src="images/Trash3.jpg" alt="Welcome Image" />
+      </li>
+   
+  </ul>
+  <br>
+  <hr>
+</div>
+
+  <!-- importing bootstrap.js and supporting js libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- importing app scripts (load order is important) -->
+  <script type="text/javascript" src="scripts/authConfig.js"></script>
+  <script type="text/javascript" src="scripts/graphConfig.js"></script>
+  <script type="text/javascript" src="scripts/ui.js"></script>
+
+  <!-- <script type="text/javascript" src="./authRedirect.js"></script>   -->
+  <!-- uncomment the above line and comment the line below if you would like to use the redirect flow -->
+  <script type="text/javascript" src="scripts/authPopup.js"></script>
+  <script type="text/javascript" src="scripts/graph.js"></script>
+</body>
+
+</html>

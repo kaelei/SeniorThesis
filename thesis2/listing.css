@@ -1,0 +1,35 @@
+#newListing_body{
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    color: white 
+}    
+#listing_header{
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    color: white
+
+}
+
+#newListing{
+    
+    width: 30%;
+    height: 30%;
+    text-align:  center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A31037;
+}
+#listImg{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 25px;
+}
+.browseBtn{
+    font-family: 'Playfair Display';
+    padding: .2em .4em;
+    background-color: #A31037;
+    border-radius: 25px;
+    color: #FFFFFF;
+    border: #A31037;
+    width: 10em;
+}
